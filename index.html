@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CI/CD Portfolio — Irfan Nur Iqbal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- NAV -->
+    <nav class="navbar">
+      <div class="nav-brand">
+        <span class="nav-logo">&#9654;</span>
+        <span>DevOps Portfolio</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#pipeline">Pipeline</a></li>
+        <li><a href="#stack">Tech Stack</a></li>
+        <li><a href="#contact" class="btn-nav">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="about">
+      <div class="hero-badge">&#9679; Live &amp; Running</div>
+      <h1 class="hero-title">CI/CD Deployment<br /><span class="highlight">Project</span></h1>
+      <p class="hero-sub">Automated deployment pipeline built on GitHub Actions &amp; AWS EC2</p>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-label">Developer</span>
+          <span class="meta-value">Irfan Nur Iqbal</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-label">Role</span>
+          <span class="meta-value">IT Staff / Technical Support</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-label">Course</span>
+          <span class="meta-value">Cloud Computing — Semester 6</span>
+        </div>
+      </div>
+      <button class="btn-primary" onclick="showMessage()">&#9658; Test Deployment</button>
+      <div id="message" class="message-box hidden"></div>
+    </section>
+
+    <!-- PIPELINE -->
+    <section class="section" id="pipeline">
+      <h2 class="section-title">Deployment Pipeline</h2>
+      <p class="section-sub">Every push to main triggers an automated workflow</p>
+      <div class="pipeline">
+        <div class="pipeline-step">
+          <div class="step-icon">&#128229;</div>
+          <div class="step-label">Push to GitHub</div>
+        </div>
+        <div class="pipeline-arrow">&#8594;</div>
+        <div class="pipeline-step">
+          <div class="step-icon">&#9881;</div>
+          <div class="step-label">GitHub Actions</div>
+        </div>
+        <div class="pipeline-arrow">&#8594;</div>
+        <div class="pipeline-step">
+          <div class="step-icon">&#9989;</div>
+          <div class="step-label">Test &amp; Build</div>
+        </div>
+        <div class="pipeline-arrow">&#8594;</div>
+        <div class="pipeline-step">
+          <div class="step-icon">&#9729;</div>
+          <div class="step-label">Deploy to EC2</div>
+        </div>
+        <div class="pipeline-arrow">&#8594;</div>
+        <div class="pipeline-step active">
+          <div class="step-icon">&#127760;</div>
+          <div class="step-label">Live via Nginx</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section section-alt" id="stack">
+      <h2 class="section-title">Tech Stack</h2>
+      <p class="section-sub">Tools and services powering this deployment</p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">&#9729;</div>
+          <h3>AWS EC2</h3>
+          <p>Virtual server hosting the application on the cloud.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#9881;</div>
+          <h3>GitHub Actions</h3>
+          <p>CI/CD workflow automation triggered on every push.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128195;</div>
+          <h3>Nginx</h3>
+          <p>High-performance web server serving the static site.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128274;</div>
+          <h3>SSH Deploy</h3>
+          <p>Secure server connection for automated file deployment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <p class="footer-name">Irfan Nur Iqbal</p>
+      <p class="footer-sub">IT Staff / Technical Support &mdash; Cloud Computing Assignment</p>
+      <p class="footer-copy">&copy; 2026 &middot; Built with GitHub Actions &amp; AWS EC2</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
